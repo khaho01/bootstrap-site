@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <style>
+        /* Styles for header, footer, navbar, and general layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        /* Styles for specific content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="radio"], input[type="checkbox"], input[type="submit"] {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>University Name</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <!-- Home Page -->
+        <section id="home">
+            <h2>Welcome to our University</h2>
+            <img src="university_image.jpg" alt="University Image">
+        </section>
+        <!-- About Page -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus justo eget neque fermentum, eget pharetra mauris efficitur. Curabitur gravida nisl quis nulla ultrices, nec tempus arcu sodales.</p>
+            <ul>
+                <li>History of the University</li>
+                <li>Mission and Vision</li>
+                <li>Our Faculty</li>
+            </ul>
+            <a href="https://www.charlotte.edu">External Link</a>
+        </section>
+        <!-- Contact Us Page -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="inquiry">Type of Inquiry:</label>
+                <input type="radio" id="general" name="inquiry" value="general" checked>
+                <label for="general">General</label>
+                <input type="radio" id="admissions" name="inquiry" value="admissions">
+                <label for="admissions">Admissions</label>
+                <input type="radio" id="financial_aid" name="inquiry" value="financial_aid">
+                <label for="financial_aid">Financial Aid</label>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 University Name. All Rights Reserved.
+    </footer>
+</body>
+</html>
